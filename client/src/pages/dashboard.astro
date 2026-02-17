@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/layout.astro';
+---
+
+<Layout title="Panel Principal">
+  <div class="max-w-7xl mx-auto">
+    <header class="flex justify-between items-end mb-10">
+      <div>
+        <p class="text-sm text-slate-500 font-medium uppercase tracking-wider">Resumen General</p>
+        <h1 class="text-3xl font-bold text-slate-900">Bienvenido al Sistema de Gestión Académica</h1>
+      </div>
+      <div class="text-right hidden md:block">
+        <p class="text-sm font-medium text-slate-600">Lunes, 16 de Febrero</p>
+        <p class="text-xs text-slate-400">Barquisimeto, Lara</p>
+      </div>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+      <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+        <p class="text-slate-500 text-xs font-bold uppercase mb-2">Total Estudiantes</p>
+        <h3 class="text-4xl font-black text-slate-800">1,250</h3>
+        <span class="text-green-500 text-xs font-medium">↑ 12% este mes</span>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+        <p class="text-slate-500 text-xs font-bold uppercase mb-2">Total Docentes</p>
+        <h3 class="text-4xl font-black text-slate-800">75</h3>
+        <span class="text-slate-400 text-xs">Personal activo</span>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+        <p class="text-slate-500 text-xs font-bold uppercase mb-2">Aulas en Uso</p>
+        <h3 class="text-4xl font-black text-slate-800">18/24</h3>
+        <div class="w-full bg-slate-100 h-1.5 rounded-full mt-3">
+            <div class="bg-blue-500 h-1.5 rounded-full w-[75%]"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-slate-900 rounded-2xl p-8 text-white shadow-lg overflow-hidden relative">
+      <div class="relative z-10">
+        <h2 class="text-xl font-bold mb-2">Infraestructura de Red</h2>
+        <p class="text-slate-400 text-sm mb-6 max-w-md">Monitoreo activo de dispositivos y nodos de la academia.</p>
+        <button class="bg-blue-600 hover:bg-blue-500 px-6 py-2 rounded-lg font-semibold text-sm transition-colors">
+          Ver Diagrama Lógico
+        </button>
+      </div>
+      <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl"></div>
+    </div>
+  </div>
+</Layout>
